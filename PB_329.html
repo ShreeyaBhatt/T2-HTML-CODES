@@ -1,26 +1,23 @@
+<!-- Write HTML and CSS script to design one table having 3 columns and 5 rows. Add random data. 
+While hovering, it should be expanded around 50% horizontally, background-color and font color 
+will become red and white respectively. Expansion should take place in 2 seconds-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <style>
-    table {
-      width: 600px;
-      border-collapse: collapse;
-      margin: 40px auto;
+    table {width: 600 px;
+      border-collapse: collapse; margin: 40 px auto;
     }
-
     th, td {
-      border: 1px solid black;
-      padding: 12px;
-      text-align: center;
-      width: 33.3%;
+      border: 1 px solid black; padding: 12 px;
+      text-align: center; width: 33.3%;
       transition: width 2s, background-color 2s, color 2s;
     }
 
     td:hover, th:hover {
       width: 50%;
-      background-color: red;
-      color: white;
+      background-color: red; color: white;
       cursor: pointer;
     }
   </style>
@@ -64,3 +61,4 @@
   </table>
 </body>
 </html>
+
