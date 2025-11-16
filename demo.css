@@ -1,0 +1,5 @@
+/* Style the first letter of the first header */
+h1::first-letter {
+    color: red;
+    font-size: 160%;
+}

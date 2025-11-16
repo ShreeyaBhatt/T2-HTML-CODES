@@ -1,0 +1,17 @@
+/* 1) First line of paragraph: green + italic */
+p::first-line {
+    color: green;
+    font-style: italic;
+}
+
+/* 2) Selected text of heading becomes grey */
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+    background-color: grey;
+}
+
+/* 3) Ordered list: capital Roman letters, green color, 30px size */
+ol {
+    list-style-type: upper-roman;
+    color: green;
+    font-size: 30px;
+}

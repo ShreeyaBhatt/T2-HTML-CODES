@@ -1,0 +1,20 @@
+/* i) Headings: normal font, 240% size, right aligned */
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-size: 240%;
+    text-align: right;
+}
+
+/* ii) Class 'container' for paragraph: Times New Roman, bold, green text, 2cm indentation */
+.container {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    color: green;
+    text-indent: 2cm;
+}
+
+/* iii) Background image repeated vertically only */
+body {
+    background-image: url('nature.jpg');
+    background-repeat: repeat-y; /* vertical repeat only */
+}

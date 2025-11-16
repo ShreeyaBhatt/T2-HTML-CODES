@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Background Image Padding Example</title>
+    <style>
+        .box {
+            border: 5px solid black;          /* Border around the element */
+            padding: 20px;                    /* Padding inside the border */
+            width: 300px;
+            
+            /* Background image and background color */
+            background-image: url('nature.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* Ensures background is visible only in content + padding, not under border */
+            background-origin: padding-box;
+            background-clip: padding-box;
+
+            /* Optional for better appearance */
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>This box has a border and padding, and the background image fills only the content and padding area, excluding the border space.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signup Form</title>
+    <style>
+        #username:hover {
+            background-color: yellow;
+        }
+        #password:hover {
+            background-color: pink;
+        }
+        input.sport[type="checkbox"]:checked + label,
+        input.sport[type="checkbox"]:focus + label {
+            color: red;
+        }
+        input.gender[type="radio"]:checked + label,
+        input.gender[type="radio"]:focus + label {
+            color: red;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            color: blue;
+            cursor: pointer;
+        }
+        form {
+            width: 350px;
+            padding: 15px;
+            border: 2px solid black;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        div {
+            margin-bottom: 12px;
+        }
+        label {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+        </div>
+        <div>
+            <p>Choose your sports:</p>
+            <input type="checkbox" id="cricket" name="sports" value="cricket" class="sport" />
+            <label for="cricket">Cricket</label><br />
+            <input type="checkbox" id="hockey" name="sports" value="hockey" class="sport" />
+            <label for="hockey">Hockey</label><br />
+            <input type="checkbox" id="badminton" name="sports" value="badminton" class="sport" />
+            <label for="badminton">Badminton</label><br />
+            <input type="checkbox" id="tennis" name="sports" value="tennis" class="sport" />
+            <label for="tennis">Tennis</label>
+        </div>
+        <div>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" class="gender" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" class="gender" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" class="gender" />
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</body>
+</html>

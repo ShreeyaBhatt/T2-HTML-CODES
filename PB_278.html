@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Label Effects</title>
+    <style>
+        #name:focus {
+            background-color: lightgreen;
+        }
+        label[for="password"]:hover + input {
+            font-size: 18px;
+        }
+        label[for="contact"]:hover + input {
+            font-size: 18px;
+        }
+        label.gender input[type="radio"]:checked + span {
+            color: blue;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            font-weight: bold;
+            font-style: italic;
+        }
+        form {
+            width: 320px;
+            padding: 15px;
+            border: 2px solid black;
+            background-color: #f9f9f9;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact">
+        </div>
+        <div>
+            <label class="gender">
+                <input type="radio" name="gender" value="male">
+                <span>Male</span>
+            </label>
+            <label class="gender">
+                <input type="radio" name="gender" value="female">
+                <span>Female</span>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

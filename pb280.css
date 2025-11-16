@@ -1,0 +1,19 @@
+/* i) Headings normal font style, font size 120% */
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-size: 120%;
+}
+
+/* ii) Class 'arial' for paragraphs: font-family Arial, bold, 3cm text indent */
+.arial {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-indent: 3cm;
+}
+
+/* iii) Background orange with repeated background image horizontally */
+body {
+    background-color: orange;
+    background-image: url("nature.jpg");
+    background-repeat: repeat-x; /* repeats horizontally only */
+}

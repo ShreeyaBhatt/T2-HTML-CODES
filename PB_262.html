@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* Class selector for specific link */
+    a.special-link:link {
+        color: red;     /* before visited */
+    }
+
+    a.special-link:visited {
+        color: blue;    /* after visited */
+    }
+</style>
+</head>
+<body>
+    <p>This link has the special effect:</p>
+    <a href="https://youtube.com" class="special-link" target="_blank">Special Link</a>
+    <p>This link is normal and will NOT change color:</p>
+    <a href="https://google.com" target="_blank">Normal Link</a>
+</body>
+</html>
