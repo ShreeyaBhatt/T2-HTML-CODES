@@ -1,3 +1,4 @@
+<!--Write down HTML/CSS code that use the border property to create thumbnail images.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,21 +6,13 @@
     <title>Thumbnail Images with Border</title>
     <style>
         .thumbnail {
-            border: 2px solid #ddd;     /* Light gray border */
-            border-radius: 4px;         /* Rounded corners */
-            padding: 5px;               /* Space around image inside the border */
-            width: 150px;               /* Fixed thumbnail width */
-            height: 150px;              /* Fixed thumbnail height */
-            object-fit: cover;          /* Ensures image covers area without distortion */
-            display: block;
-            margin: 10px;
-            box-sizing: border-box;    /* Include padding and border in width/height */
-            transition: box-shadow 0.3s ease; /* Smooth hover effect */
+            border: 2 px solid #ddd; border-radius: 4 px;         
+            padding: 5 px; width: 150 px;               
+            height: 150 px; display: block;
+            margin: 10 px; box-sizing: border-box;    
+            transition: box-shadow 0.3s ease; 
         }
-        .thumbnail:hover {
-            box-shadow: 0 0 8px 2px rgba(0, 140, 186, 0.7); /* Blue glow on hover */
-            cursor: pointer;
-        }
+        .thumbnail:hover {box-shadow: 0 0 8 px 2 px rgb(0, 140, 186); }
     </style>
 </head>
 <body>
