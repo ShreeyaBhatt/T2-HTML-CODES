@@ -1,3 +1,12 @@
+<!--Write HTML & CSS script to design a signup form having fields like Username, password, choices 
+of sports like Cricket, Hockey, Badminton & Tennis. Include gender field, submit and reset 
+buttons.
+ Follow below requirements:
+ i) While hovering username & password, its background should turn yellow   color and pink color 
+respectively.
+ ii) While clicking sports and gender fields, text should turn to red color.
+ iii) Both submit and reset button text should turn blue, while hovering.
+ iv) Use appropriate selectors.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,30 +21,23 @@
             background-color: pink;
         }
         input.sport[type="checkbox"]:checked + label,
-        input.sport[type="checkbox"]:focus + label {
-            color: red;
-        }
+        input.sport[type="checkbox"]:focus + label {color: red;}
         input.gender[type="radio"]:checked + label,
-        input.gender[type="radio"]:focus + label {
-            color: red;
-        }
+        input.gender[type="radio"]:focus + label {color: red;}
         input[type="submit"]:hover,
-        input[type="reset"]:hover {
-            color: blue;
-            cursor: pointer;
-        }
+        input[type="reset"]:hover {color: blue;}
         form {
-            width: 350px;
-            padding: 15px;
-            border: 2px solid black;
+            width: 350 px;
+            padding: 15 px;
+            border: 2 px solid black;
             background-color: #f9f9f9;
             font-family: Arial, sans-serif;
         }
         div {
-            margin-bottom: 12px;
+            margin-bottom: 12 px;
         }
         label {
-            margin-left: 5px;
+            margin-left: 5 px;
         }
     </style>
 </head>
@@ -76,3 +78,4 @@
     </form>
 </body>
 </html>
+
