@@ -1,3 +1,6 @@
+<!--Write the HTML/CSS code to design a web page that contains a <div> element with a border, 
+some padding, and a background image. The background should appear only within the content and padding area of the element,
+and it must not extend into the border space. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +9,12 @@
     <title>Background Image Padding Example</title>
     <style>
         .box {
-            border: 5px solid black;          /* Border around the element */
-            padding: 20px;                    /* Padding inside the border */
-            width: 300px;
-            
-            /* Background image and background color */
+            border: 5 px solid black; padding: 20 px; width: 300 px;
             background-image: url('nature.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-
-            /* Ensures background is visible only in content + padding, not under border */
             background-origin: padding-box;
             background-clip: padding-box;
-
-            /* Optional for better appearance */
             background-position: center;
         }
     </style>
