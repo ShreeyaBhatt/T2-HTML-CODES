@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Sections Hover</title>
+  <style>
+    :root {
+      --section-height: 20vh;
+      --section-width: 100%;
+      --border-hover: 2px solid red;
+      --title-hover-color: red;
+      --paragraph-margin-left-hover: 2cm;
+      --paragraph-text-transform-hover: capitalize;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      width: var(--section-width);
+      height: var(--section-height);
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+      transition: border 0.3s ease;
+    }
+    section:hover {
+      border: var(--border-hover);
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      transition: color 0.3s ease;
+    }
+    h2:hover {
+      color: var(--title-hover-color);
+    }
+    p {
+      margin-left: 0;
+      transition: margin-left 0.3s ease, text-transform 0.3s ease;
+    }
+    p:hover {
+      margin-left: var(--paragraph-margin-left-hover);
+      text-transform: var(--paragraph-text-transform-hover);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Section 1 Title</h2>
+    <p>this is the first section paragraph with some sample text.</p>
+  </section>
+  <section>
+    <h2>Section 2 Title</h2>
+    <p>this is the second section paragraph with some sample text.</p>
+  </section>
+  <section>
+    <h2>Section 3 Title</h2>
+    <p>this is the third section paragraph with some sample text.</p>
+  </section>
+
+</body>
+</html>

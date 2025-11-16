@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    table {
+      width: 600px;
+      border-collapse: collapse;
+      margin: 40px auto;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 12px;
+      text-align: center;
+      width: 33.3%;
+      transition: width 2s, background-color 2s, color 2s;
+    }
+
+    td:hover, th:hover {
+      width: 50%;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pen</td>
+        <td>$1</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>$3</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eraser</td>
+        <td>$0.5</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Marker</td>
+        <td>$2</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>Ruler</td>
+        <td>$1.5</td>
+        <td>150</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

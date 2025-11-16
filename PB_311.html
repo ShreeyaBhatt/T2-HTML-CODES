@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thumbnail Images with Border</title>
+    <style>
+        .thumbnail {
+            border: 2px solid #ddd;     /* Light gray border */
+            border-radius: 4px;         /* Rounded corners */
+            padding: 5px;               /* Space around image inside the border */
+            width: 150px;               /* Fixed thumbnail width */
+            height: 150px;              /* Fixed thumbnail height */
+            object-fit: cover;          /* Ensures image covers area without distortion */
+            display: block;
+            margin: 10px;
+            box-sizing: border-box;    /* Include padding and border in width/height */
+            transition: box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+        .thumbnail:hover {
+            box-shadow: 0 0 8px 2px rgba(0, 140, 186, 0.7); /* Blue glow on hover */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Thumbnail Image Example</h2>
+    <img src="smartwatch1.jpg" alt="Smartwatch" class="thumbnail" />
+    <img src="smartwatch2.jpg" alt="Smartwatch 2" class="thumbnail" />
+    <img src="smartwatch3.jpg" alt="Smartwatch 3" class="thumbnail" />
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rounded Images with border-radius</title>
+  <style>
+    .rounded {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;    /* Rounded corners with 20px radius */
+      object-fit: cover;      /* Maintain aspect ratio and cover the area */
+      border: 2px solid #666; /* Optional border */
+      display: block;
+      margin: 20px auto;
+    }
+    .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;     /* Fully circular */
+      object-fit: cover;
+      border: 3px solid #3498db;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>Rounded Corner Image</h2>
+  <img src="smartwatch1.jpg" alt="Smartwatch" class="rounded" />
+  <h2>Circular Image</h2>
+  <img src="smartwatch2.jpg" alt="Smartwatch" class="circle" />
+</body>
+</html>

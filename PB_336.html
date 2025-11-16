@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rotating & Growing Heading</title>
+  <style>
+    h1 {
+      display: inline-block;
+      padding: 20px;
+      background-color: lightblue;
+      color: black;
+      animation-name: growRotate;
+      animation-duration: 6s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      transform-origin: center;
+      margin: 50px;
+    }
+
+    @keyframes growRotate {
+      0% {
+        transform: rotate(0deg) scale(1);
+        background-color: lightblue;
+      }
+      50% {
+        transform: rotate(1200deg) scale(2);
+        background-color: lightcoral;
+      }
+      100% {
+        transform: rotate(0deg) scale(1);
+        background-color: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Animated Heading</h1>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Global Variable with var()</title>
+  <style>
+    :root {
+      --main-bg-color: orange;
+      --main-text-color: blue;
+      --main-padding: 20px;
+    }
+    body {
+      background-color: var(--main-bg-color);
+      color: var(--main-text-color);
+      padding: var(--main-padding);
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: var(--main-text-color);
+      padding: var(--main-padding);
+      border-bottom: 2px solid var(--main-text-color);
+    }
+    p {
+      padding: var(--main-padding);
+      background-color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Using CSS Global Variables</h1>
+  <p>This paragraph uses global CSS variables declared in the <code>:root</code> selector and accessed with the <code>var()</code> function.</p>
+</body>
+</html>
