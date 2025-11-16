@@ -1,12 +1,14 @@
+<!-- Write HTML & CSS code to design one <div> tag which grows in size while rotating 1200 degrees 
+with 2 different background color and again back to its original size and background color. An 
+effect should begin after 3 second of loading page and it is continuing forever.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Rotating & Growing Heading</title>
   <style>
     h1 {
       display: inline-block;
-      padding: 20px;
+      padding: 20 px;
       background-color: lightblue;
       color: black;
       animation-name: growRotate;
@@ -16,9 +18,8 @@
       animation-timing-function: ease-in-out;
       animation-direction: alternate;
       transform-origin: center;
-      margin: 50px;
+      margin: 50 px;
     }
-
     @keyframes growRotate {
       0% {
         transform: rotate(0deg) scale(1);
@@ -39,3 +40,4 @@
   <h1>Animated Heading</h1>
 </body>
 </html>
+
