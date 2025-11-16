@@ -1,11 +1,14 @@
+<!-- Write an HTML & CSS script to design two tables having 3 rows & 3 columns of 50% width each 
+horizontally adjacent to each other. They have blue and green background colors respectively. If 
+page turns to portrait mode, then background colors of tables should be swapped. Responsive 
+concept must be observed while shrinking width of page.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <style>
   .container {
-    display: flex;
-    width: 100%;
+    display: flex; width: 100%;
   }
   table {
     width: 50%;
@@ -14,27 +17,21 @@
     color: white;
   }
   th, td {
-    border: 1px solid white;
-    padding: 10px;
+    border: 1px solid white; padding: 10px;
     text-align: center;
   }
-
-  /* Colors in landscape */
   .blue { background: blue; }
   .green { background: green; }
 
-  /* Portrait mode: stack + swap colors */
   @media (orientation: portrait) {
     .container { flex-direction: column; }
     table { width: 100%; margin-bottom: 15px; }
-
     .blue { background: green; }
     .green { background: blue; }
   }
 </style>
 </head>
 <body>
-
 <div class="container">
   <table class="blue">
     <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr>
@@ -42,7 +39,6 @@
     <tr><td>A4</td><td>A5</td><td>A6</td></tr>
     <tr><td>A7</td><td>A8</td><td>A9</td></tr>
   </table>
-
   <table class="green">
     <tr><th>Header 4</th><th>Header 5</th><th>Header 6</th></tr>
     <tr><td>B1</td><td>B2</td><td>B3</td></tr>
@@ -50,6 +46,5 @@
     <tr><td>B7</td><td>B8</td><td>B9</td></tr>
   </table>
 </div>
-
 </body>
 </html>
